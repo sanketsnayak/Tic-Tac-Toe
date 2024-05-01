@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.tic{
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -3px -3px 9px 0px grey;
+    
+}
+.tic img{
+    width: 100px;
+    height: 50px;
+}
+.heading{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+.gamecontainer{
+    display: flex;
+    margin: 7vw;
+    
+}
+.left{
+    display: grid;
+    grid-template-columns:repeat(3,10vw) ;
+    grid-template-rows:repeat(3,10vw) ;
+}
+.container{
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: 900;
+    position: relative;
+}
+.bb{
+    border-bottom: 0;
+}
+.bl{
+    border-left: 0;
+}
+.br{
+    border-right: 0;
+}
+.bt{
+    border-top: 0;
+}
+.gif img{
+    width: 0;
+    transition: all 0.5s ease-in-out;
+}
+#reset{
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 50px;
+    background: #e0e0e0;
+    background: #e0e0e0;
+    box-shadow: 6px 7px 19px #bebebe, -14px -15px 6px 0px #ffffff;
+    cursor: pointer;
+
+}
+.butt{
+    display:flex ;
+    gap: 10vw;
+    justify-content: center;
+    align-items: center;
+
+}
+#info{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 900;
+    margin-left: 7vw;
+}
+.gif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    
+}
+.line{
+    background-color: black;
+    width: 0vw;
+    height: 4px;
+    position: absolute;
+    left: 7vw;
+    transition: all 0.5s ease-in-out;
+
+}
+.container:hover{
+    background-color: #e6e6e6;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+@media (max-width: 900px) {
+    .heading{
+        font-size: 20px;
+    }
+   .gamecontainer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .left{
+        justify-content: center;
+    }
+    .left{
+        
+        grid-template-columns:repeat(3,28vw) ;
+        grid-template-rows:repeat(3,28vw) ;
+    }
+    #info{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    .butt{
+        margin-top: 50px;
+        flex-direction: column;
+        
+    }
+    .gif{
+        width: 100vw;
+        justify-content: center;
+        margin-top: 40px;
+    }
+   
+    .tic img{
+        width: 60px;
+        height: 30px;
+    }
+    .left{
+        margin-top: 40px;
+    }
+    .line{
+        width:0vw;
+    }
+    
+  }
+  
+  
