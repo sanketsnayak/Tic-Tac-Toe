@@ -24,11 +24,13 @@ const checkWin=()=>{
             document.getElementById("info").innerText=turn+ " Wins";
             gameOver=true;
             document.querySelector(".gif").getElementsByTagName("img")[0].style.width="25vw";
+            boo.play();
             var clientWidth = document.querySelector(".container").clientWidth;
-            if(clientWidth==127) {        
+            console.log(clientWidth)
+            if(clientWidth>=120) {        
             document.querySelector(".line").style.width="30vw"
             document.querySelector(".line").style.transform=`translate(${e[3]}vw,${e[4]}vw) rotate(${e[5]}deg)`
-            boo.play();
+            
             }
         }
     })
